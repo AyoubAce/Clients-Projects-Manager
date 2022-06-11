@@ -1,4 +1,3 @@
-const {projects, clients}= require("../simpleData")
 const {GraphQLObjectType, GraphQLString, GraphQLID, GraphQLSchema, GraphQLList}= require("graphql")
 const {Client, Project} = require("../modules/modules")
 
