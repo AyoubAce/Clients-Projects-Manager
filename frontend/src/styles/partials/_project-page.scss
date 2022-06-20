@@ -1,0 +1,94 @@
+.project-page {
+  width: 90%;
+  margin: 0 auto;
+
+  .link-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    .back-link {
+      border: 1px solid $primary-color;
+      color: $base-color;
+      background-color: $primary-color;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 0.3rem 1rem;
+      border-radius: 6px;
+      box-shadow: -1px 1px 1px 1px darken($base-color, 3%);
+      transition: all 350ms ease-out;
+      &:hover {
+        border: 1px solid $secondary-color;
+        transform: scale(1.05);
+        background-color: transparent;
+        color: $secondary-color;
+      }
+    }
+  }
+  p {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  h1,
+  h3 {
+    margin-top: 2rem;
+  }
+
+  .steps {
+    margin: 0 1rem;
+  }
+  .client-info {
+    p {
+      color: $primary-color;
+    }
+  }
+  h2 {
+    margin-top: 3rem;
+  }
+  .form {
+    padding: 1rem;
+    button {
+      padding: 0.2rem 1.5rem;
+      margin: 1rem 0;
+      display: block;
+      width: 150px;
+      margin-left: auto;
+      color: $base-color;
+      background-color: $primary-color;
+      border: 1px solid $base-color;
+      border-radius: 5px;
+      box-shadow: -1px 1px 1px 1px darken($base-color, 5%);
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 350ms ease-out;
+      &:hover {
+        background-color: transparent;
+        color: $secondary-color;
+        border: 1px solid $secondary-color;
+        transform: scale(1.05);
+      }
+    }
+  }
+  .delete-project-btn {
+    background-color: transparent;
+    border: 1px solid $danger-color;
+    color: $danger-color;
+    padding: 0.3rem 1rem;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 5px;
+    box-shadow: -1px 1px 1px 1px darken($base-color, 5%);
+    margin: 0 1rem 0 auto;
+    transition: all 350ms ease-out;
+    &:hover {
+      background-color: $danger-color;
+      border: 1px solid $primary-color;
+      color: $primary-color;
+      transform: scale(1.05);
+    }
+  }
+}

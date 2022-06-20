@@ -1,0 +1,73 @@
+@import "./config";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: $base-color;
+  color: $primary-color;
+  transition: all 350ms ease-out;
+}
+
+nav {
+  background-color: $primary-color;
+  text-align: center;
+  padding: 0.5rem 0;
+  margin: 0 auto;
+  color: blue;
+  h1 {
+    color: $base-color;
+  }
+}
+.input-container{
+  .input-field{
+    position: relative;
+    margin-bottom:1rem;
+  input{
+    width: 100%;
+    padding:.2rem .5rem;
+    border-radius: 5px;
+    border:1px solid darken($base-color,5%);
+  }
+  .input-icons{
+    position: absolute;
+    top:50%;
+    right:5px;
+    transform: translate(0,-50%);
+    
+  }
+  textarea{
+    width: 100%;
+    padding:.2rem .5rem;
+    border-radius: 5px;
+    border:1px solid darken($base-color,5%);
+    resize: none;
+  }
+  label{
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  select{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid darken($base-color,10%);
+    padding:0.2rem 1rem;
+  }
+  
+}
+
+}
+.modals{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:2rem;
+  margin:2rem 0;
+}
+
+
+@import "./partials/clients";
+@import "./partials/projects";
+@import "./partials/project-page";
